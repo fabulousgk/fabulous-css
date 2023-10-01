@@ -1,0 +1,17 @@
+@layer typography {
+  /* WCAG guidelines stipulate a line height of 1.5 for body text.  However, this is not great for headers etc. 
+     This sets a default that is 1.5 for body text but smaller for bigger text. */
+ * {
+     line-height: calc(1em + 0.5rem);
+ }
+
+ /* Use system font stack by default*/
+ body {
+     font-family: system-ui, sans-serif;
+ }
+
+ /* Monospaced font stack */
+ code, .monospace {
+     font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+ }
+}
