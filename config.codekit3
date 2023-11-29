@@ -40,8 +40,20 @@
       "co" : 2,
       "ft" : 16,
       "ma" : 3,
-      "oA" : 1,
+      "oA" : 2,
       "oAP" : "\/fab-min.css",
+      "oF" : 0,
+      "pg" : 2
+    },
+    "\/fab.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 2,
+      "ft" : 16,
+      "ma" : 3,
+      "oA" : 2,
+      "oAP" : "\/fab.css",
       "oF" : 0,
       "pg" : 2
     },
@@ -171,7 +183,7 @@
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "\/img\/icon.png",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 722991490.28705895
+    "lastBuiltDate" : 722992470.42171097
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -465,14 +477,14 @@
     "bowerUseExactVersion" : 0,
     "browserRefreshDelay" : 0,
     "browserslistString" : ">0.2%, last 2 versions, Firefox ESR, not dead",
-    "buildEnvironment" : 1,
+    "buildEnvironment" : 0,
     "buildFolderActive" : 0,
     "buildFolderName" : "build",
     "cleanBuild" : 0,
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
-      "NODE_ENV:::development"
+      "NODE_ENV:::production"
     ],
     "esLintConfigFileHandlingType" : 2,
     "esLintECMAVersion" : 7,
