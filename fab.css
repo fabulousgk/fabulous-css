@@ -8,6 +8,7 @@
   /*
      Remove the styles set by the "User-Agent Stylesheet" using a 
      zero-specificity selector.
+       - Exclude media elements to ensure dimensional attributes are not striped.
        - Exclude `svg *` since this is not meant to reset SVG rendering.
        - Exclude `display` property since it is fundamental to layout (Opinionated)
        - Exclude `outline` property to ensure accessibility. (Opinionated)
@@ -16,7 +17,7 @@
          - Exclude `symbol *` - Firefox SVG sprite
          - Exclude `div` & `span` - Chrome performance issue
   */
-  *:where(:not(html, div, span):not(svg *, symbol *)) {
+  *:where(:not(html, div, span, img, iframe, canvas, svg, video, audio):not(svg *, symbol *)) {
     all: unset;
     list-style: none;
     display: revert;
