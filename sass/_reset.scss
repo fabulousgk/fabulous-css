@@ -101,4 +101,9 @@
     max-width: calc(100% - 6px - 2em);
     max-height: calc(100% - 6px - 2em);
   }
+
+  /* Remove details summary webkit styles */
+  ::-webkit-details-marker {
+    display: none;
+  }
 }

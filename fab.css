@@ -103,6 +103,10 @@
     max-width: calc(100% - 6px - 2em);
     max-height: calc(100% - 6px - 2em);
   }
+  /* Remove details summary webkit styles */
+  ::-webkit-details-marker {
+    display: none;
+  }
 }
 @layer typography {
   /* WCAG guidelines stipulate a line height of 1.5 for body text.  However, this is not great for headers etc. 
