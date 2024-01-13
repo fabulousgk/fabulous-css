@@ -52,10 +52,15 @@
     cursor: pointer;
   }
 
-  /* Constrain media elements to their parent (Opinionated) */
+  /*
+    Constrain media elements to their parent (Opinionated) 
+    Set media elements to block (Opinionated)
+  */
   :where(img, iframe, canvas, svg, video, audio) {
     max-inline-size: 100%;
     max-block-size: 100%;
+
+    display: block;
   }
 
   /* Revert the 'white-space' property for textarea elements on Safari */

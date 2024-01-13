@@ -7,7 +7,7 @@
       "uuidString" : "5F606633-D291-476A-B12A-092D188E8EE6"
     }
   ],
-  "creatorBuild" : "34518",
+  "creatorBuild" : "34564",
   "files" : {
     "\/.editorconfig" : {
       "cB" : 0,
@@ -45,18 +45,6 @@
       "oF" : 0,
       "pg" : 2
     },
-    "\/fab.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 2,
-      "ft" : 16,
-      "ma" : 3,
-      "oA" : 2,
-      "oAP" : "\/fab.css",
-      "oF" : 0,
-      "pg" : 2
-    },
     "\/fab.css.map" : {
       "cB" : 0,
       "ft" : 8192,
@@ -70,19 +58,6 @@
       "iS" : 268725,
       "oA" : 0,
       "oAP" : "\/img\/cover.png",
-      "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/icon.png" : {
-      "ft" : 32768,
-      "iS" : 28172,
-      "oA" : 0,
-      "oAP" : "\/img\/icon.png",
       "oF" : 0,
       "oIPL" : 1,
       "opt" : 1,
@@ -130,7 +105,7 @@
       "oAP" : "\/_layers.css",
       "oF" : 1,
       "oS" : 0,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/sass\/_reset.scss" : {
@@ -145,7 +120,7 @@
       "oAP" : "\/_reset.css",
       "oF" : 1,
       "oS" : 0,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/sass\/_typography.scss" : {
@@ -160,7 +135,7 @@
       "oAP" : "\/_typography.css",
       "oF" : 1,
       "oS" : 0,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     },
     "\/sass\/fab.scss" : {
@@ -175,7 +150,7 @@
       "oAP" : "\/fab.css",
       "oF" : 1,
       "oS" : 0,
-      "pg" : 2,
+      "pg" : 0,
       "sct" : 0
     }
   },
@@ -189,8 +164,8 @@
     "creationDate" : 717871371.34253001,
     "displayValue" : "fabulous-css",
     "displayValueWasSetByUser" : 1,
-    "iconImageName" : "\/img\/icon.png",
-    "iconImageWasSetByUser" : 1,
+    "iconImageName" : "meme-kahn",
+    "iconImageWasSetByUser" : 0,
     "lastBuiltDate" : 723927741.36690795
   },
   "projectSettings" : {
@@ -1017,9 +992,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 0
       },
@@ -1030,6 +1002,9 @@
         "active" : 0
       },
       "no-obj-calls" : {
+        "active" : 0
+      },
+      "no-object-constructor" : {
         "active" : 0
       },
       "no-octal" : {
@@ -1641,7 +1616,7 @@
       "decimalPrecision" : 10,
       "emitCharset" : 1,
       "outputStyle" : 0,
-      "purgeCSSStyle" : 2,
+      "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 1,
       "shouldRunBless" : 0,
       "sourceMapStyle" : 3
