@@ -1,17 +1,35 @@
 @layer typography {
   /* WCAG guidelines stipulate a line height of 1.5 for body text.  However, this is not great for headers etc. 
      This sets a default that is 1.5 for body text but smaller for bigger text. */
- * {
-     line-height: calc(1em + 0.5rem);
- }
+  :root {
+    --font-sans: system-ui, sans-serif;
+    --font-slab: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif",
+      "Sitka Small", serif;
+    --font-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+    --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+      Consolas, "DejaVu Sans Mono", monospace;
+  }
 
- /* Use system font stack by default*/
- body {
-     font-family: system-ui, sans-serif;
- }
+  * {
+    line-height: calc(1em + 0.5rem);
+  }
 
- /* Monospaced font stack */
- code, .monospace {
-     font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
- }
+  /* Use sans font stack by default*/
+  body {
+    font-family: var(--font-sans);
+  }
+
+  /* Monospaced font stack */
+  code,
+  .monospace {
+    font-family: var(--font-mono);
+  }
+
+  /* Set form elements to inherit font settings */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
 }
