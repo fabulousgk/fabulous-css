@@ -1,0 +1,67 @@
+@layer typography {
+  :root {
+    --font-sans: system-ui, sans-serif;
+    --font-slab: Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif",
+      "Sitka Small", serif;
+    --font-serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+    --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+      Consolas, "DejaVu Sans Mono", monospace;
+  }
+
+  /* WCAG guidelines stipulate a line height of 1.5 for body text.  However,
+     this is not great for headers etc. This sets a default that is 1.5 for
+     body text but smaller for bigger text. */
+  * {
+    line-height: calc(1em + 0.5rem);
+  }
+
+  /* Use sans font stack by default, and set color to theme.*/
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text-primary);
+  }
+
+  /* Monospaced font stack */
+  code,
+  .monospace {
+    font-family: var(--font-mono);
+  }
+
+  /* Set form elements to inherit font settings */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+  }
+
+  /* Set a max character width on large text elements as this is a readability
+     and accessibility issue, and is a WCAG guideline.
+
+     Add text-wrap pretty as well, this is very much opinionated, but goes with
+     balance on the headers */
+  p,
+  li,
+  figcaption {
+    max-width: 70ch;
+    text-wrap: pretty;
+  }
+
+  /* A handy rainbow text class */
+  .rainbow-text {
+    background: linear-gradient(
+      to right,
+      var(--color-rainbow-red),
+      var(--color-rainbow-orange),
+      var(--color-rainbow-yellow),
+      var(--color-rainbow-green),
+      var(--color-rainbow-blue),
+      var(--color-rainbow-purple)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: max-content;
+  }
+}

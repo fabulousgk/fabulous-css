@@ -1,0 +1,24 @@
+@use "layers";
+
+@layer theme {
+  :root {
+    --color-grayscale-900: rgb(34, 34, 34);
+    --color-grayscale-700: rgb(68, 68, 68);
+    --color-grayscale-500: rgb(106, 106, 106);
+    --color-grayscale-400: rgb(126, 126, 126);
+    --color-grayscale-300: rgb(146, 146, 146);
+    --color-grayscale-100: rgb(188, 188, 188);
+    --color-grayscale-0: rgb(232, 232, 232);
+    --color-rainbow-red: rgb(255, 38, 128);
+    --color-rainbow-orange: rgb(255, 142, 0);
+    --color-rainbow-yellow: rgb(255, 229, 23);
+    --color-rainbow-green: rgb(163, 230, 13);
+    --color-rainbow-blue: rgb(23, 191, 255);
+    --color-rainbow-purple: rgb(150, 115, 255);
+    --color-background-primary: #fff;
+    --color-background-secondary: var(--color-grayscale-700);
+    --color-text-primary: var(--color-grayscale-900);
+    --color-text-secondary: var(--color-grayscale-0);
+    --color-accent: var(--color-rainbow-green);
+  }
+}

@@ -1,14 +1,14 @@
 @use "layers";
 
 @layer reset {
-  /* 
-    This reset is based on Elad Shechter's The New CSS Reset (https://elad2412.github.io/the-new-css-reset/), to which 
-    I am deeply indebted. My changes are not a criticism of his work but a result of different philosophies and 
+  /*
+    This reset is based on Elad Shechter's The New CSS Reset (https://elad2412.github.io/the-new-css-reset/), to which
+    I am deeply indebted. My changes are not a criticism of his work but a result of different philosophies and
     priorities. Please see my commit comments on GitHub if you are interested in my thoughts on the changes I made.
   */
 
   /*
-    Remove the styles set by the "User-Agent Stylesheet" using a 
+    Remove the styles set by the "User-Agent Stylesheet" using a
     zero-specificity selector.
       - Exclude `svg *` since this is not meant to reset SVG rendering.
       - Exclude media elements to prevent dimension attributes being stripped.
@@ -19,7 +19,12 @@
         - Exclude `symbol *` - Firefox SVG sprite
         - Exclude `div` & `span` - Chrome performance issue
  */
-  *:where(:not(html, div, span, img, iframe, canvas, svg, video, audio):not(svg *, symbol *)) {
+  *:where(
+      :not(html, div, span, img, iframe, canvas, svg, video, audio):not(
+          svg *,
+          symbol *
+        )
+    ) {
     all: unset;
     list-style: none;
     display: revert;
@@ -27,8 +32,8 @@
   }
 
   /*
-    Reset placeholder text style (pseudo elements are not included in 
-    the main reset) 
+    Reset placeholder text style (pseudo elements are not included in
+    the main reset)
   */
   ::placeholder {
     color: unset;
@@ -47,13 +52,19 @@
     text-size-adjust: none;
   }
 
+  /* Set text-wrap balance on headers.  This is certainly opinionated, but
+     seems fairly standard at this point. */
+  :where(h1, h2, h3, h4, h5, h6) {
+    text-wrap: balance;
+  }
+
   /* Set pointer on anchor and buttons since this is expected behavior */
   :where(a, button) {
     cursor: pointer;
   }
 
   /*
-    Constrain media elements to their parent (Opinionated) 
+    Constrain media elements to their parent (Opinionated)
     Set media elements to block (Opinionated)
   */
   :where(img, iframe, canvas, svg, video, audio) {
